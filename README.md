@@ -27,5 +27,5 @@ distance.
 Executed with the next parameters:
 `1000 0 trace data/3body.txt`
 <div>
-<img src="assets/nbody_3_planets.gif">
+<img src="assets/nbody_3_planets.gif" width="500">
 </div>
