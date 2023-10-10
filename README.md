@@ -1,8 +1,6 @@
 # N-body simulation
 
-Given a system of celestial bodies (stars, planets,etc.), mutually affected by gravitational forces, describe their
-motion. Each body has a mass and an initial position and velocity. Each other
-body exerts an attraction force on it that depends on the masses and relative
+Given a system of celestial bodies (stars, planets,etc.), mutually affected by gravitational force. Each body has a mass and an initial position and velocity. Each other body exerts an attraction force on it that depends on the masses and relative
 distance.
 
 ## Project structure
