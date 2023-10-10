@@ -1,0 +1,50 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+class Main{
+    + main(args : String[])
+}
+
+class Body {
+- position : Vector
+- velocity : Vector
+- mass : double
++ move(f:Vector, dt:double)
++ forceFrom(b : Body) : Vector
++ getPosition() : Vector
++ toString()
+}
+
+class Universe {
+- numBodies : int
+- radius : double
+- bodies : Body[]
++ Universe(fname : Strinag)
++ update(dt : double)
++ getBodyPosition(i : int) : Vector
++ getNumBodies() : int
++ getRadius() : double
+}
+
+class NBodySimulator{
+- timeStep : double
+- pauseTime : int
+- trace : boolean
+- universe : Universe
++ NBodySimulator(universe : Universe, dt : double, pauseTime : int, doTrace : boolean)
++ simulate()
++ drawUniverse()
++ drawCanvas()
+}
+
+NBodySimulator -right-> "1" Universe : universe
+Universe *-> "1..*" Body : bodies
+
+note right of Main
+    Universe universe = new Universe(fname);
+    NBodySimulator simulator = new NBodySimulator(universe, dt, pauseTime, trace);
+    simulator.simulate();
+end note
+
+@enduml
