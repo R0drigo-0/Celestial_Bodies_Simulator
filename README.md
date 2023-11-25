@@ -22,7 +22,7 @@ distance.
 4. **path**
 
 ## Visualization
-Executed with the next parameters:
+Executed with the parameters:
 `1000 0 trace data/3body.txt`
 <div>
 <img src="assets/nbody_3_planets.gif" width="500">
